@@ -1,6 +1,14 @@
 <div class="page-header">
   <h1>People</h1>
 </div>
+<div class="sort-links">
+  <p><strong>Sort by:</strong></p>
+  <%= link_to "First Name", root_path(sort: 'first_name') %> |
+  <%= link_to "Last Name", root_path(sort: 'last_name') %> |
+  <%= link_to "Eye Color", root_path(sort: 'eye_color') %> |
+  <%= link_to "Birth Date", root_path(sort: 'date_of_birth') %> |
+  <%= link_to "Only Awesome!", root_path(awesome: 'awesome') %> |
+</div>
 
 <table class="table table-bordered">
   <thead>

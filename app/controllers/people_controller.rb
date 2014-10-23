@@ -1,8 +1,7 @@
 class PeopleController < ApplicationController
 
   def index
-    @people = Person.order(:first_name)
-                    .where(awesome: true, eye_color: "green")
+      @people = Person.order(params[:sort]).where(params[:awesome])
   end
 
 end
