@@ -3,10 +3,14 @@
 </div>
 <div class="sort-links">
   <p><strong>Sort by:</strong></p>
-  <%= link_to "First Name", root_path(sort: 'first_name') %> |
-  <%= link_to "Last Name", root_path(sort: 'last_name') %> |
-  <%= link_to "Eye Color", root_path(sort: 'eye_color') %> |
-  <%= link_to "Birth Date", root_path(sort: 'date_of_birth') %> |
+  <%= link_to "First Name (a)", root_path(sort: 'first_name', order: 'DESC') %> |
+  <%= link_to "Last Name (a)", root_path(sort: 'last_name', order: 'DESC') %> |
+  <%= link_to "Eye Color (a)", root_path(sort: 'eye_color', order: 'DESC') %> |
+  <%= link_to "Birth Date (a)", root_path(sort: 'date_of_birth', order: 'DESC') %> |
+  <%= link_to "First Name (d)", root_path(sort: 'first_name', order: 'ASC') %> |
+  <%= link_to "Last Name (d)", root_path(sort: 'last_name', order: 'ASC') %> |
+  <%= link_to "Eye Color (d)", root_path(sort: 'eye_color', order: 'ASC') %> |
+  <%= link_to "Birth Date (d)", root_path(sort: 'date_of_birth', order: 'ASC') %> |
   <%= link_to "Only Awesome!", root_path(awesome: 'awesome') %> |
 </div>
 
